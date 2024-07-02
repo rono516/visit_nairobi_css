@@ -1,0 +1,125 @@
+/**
+Palette: https://scrimba.com/links/hometown-palette
+RED: #E63946
+LIGHT: #F1FAEE
+AQUA: #A8DADC
+LIGHT BLUE: #457B9D
+DARK BLUE: #1D3557
+
+*/
+
+body {
+    margin: 0;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+}
+
+img {
+    width: 100px;
+}
+
+.hero{
+    background-image: url("images/nairobi.jpeg");
+    height: 50vh;
+    color: white;
+}
+
+.hero-content{
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+#visit-nairobi span{
+    background-color: #1D3557;
+    padding: 4px 10px;
+    border-radius: 12px;
+}
+
+#enjoy-nairobi{
+    background-color: #457B9D;
+    padding: 4px 10px;
+    border-radius: 12px;
+}
+
+.activities{
+   padding: 50px 0px;
+}
+.activities h3{
+    font-size: 30px;
+}
+
+.single-activity{
+    padding: 13px;
+}
+
+#activity-img{
+    border-radius: 50%;
+}
+
+.activities-details{
+    display: flex;
+    justify-content: space-around;
+}
+#activity-title{
+    font-weight: bold;
+    font-size: 20px;
+}
+#activity-description{
+    font-size: 19px;
+}
+
+.guide-section{
+    margin-bottom: 30px;
+    padding: 20px 10px;
+    width: 40%;
+    border-radius: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #A8DADC;
+    display: flex;
+    border-bottom: 10px solid #1D3557;
+
+}
+.guide-image{
+   width: 50%;
+}
+.guide-image img{
+   width: 200px;
+   border-radius: 20px;
+}
+.guide-description{
+    width: 50%;
+}
+.guide-description h3, h4{
+    font-weight: bold;
+}
+.guide-description p{
+    font-style: italic;
+}
+
+@media only screen and (max-width: 768px) {
+
+
+     .hero-content{
+        padding-top: 20px;
+        width: 100%;
+     }
+     .activities-details{
+        flex-direction: column;
+     }
+     .guide-section{
+        flex-direction: column;
+        width: 100%;
+     }
+
+     .guide-image{
+        width: 100%;
+    }
+    .guide-description{
+        width: 100%;
+    }
+  }
